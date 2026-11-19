@@ -1,0 +1,32 @@
+[
+  {
+    "deduction": 20,
+    "income": 100,
+    "reasons": [
+      "duplicate:return_id"
+    ],
+    "return_id": "R01",
+    "tax_year": 2022,
+    "taxpayer_id": "F0"
+  },
+  {
+    "deduction": 20,
+    "income": 100,
+    "reasons": [
+      "duplicate:return_id"
+    ],
+    "return_id": "R01",
+    "tax_year": 2022,
+    "taxpayer_id": "F0"
+  },
+  {
+    "deduction": 33,
+    "income": null,
+    "reasons": [
+      "missing:income"
+    ],
+    "return_id": "R02",
+    "tax_year": 2022,
+    "taxpayer_id": "F1"
+  }
+]

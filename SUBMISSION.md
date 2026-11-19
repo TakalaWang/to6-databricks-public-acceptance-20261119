@@ -1,0 +1,12 @@
+# Native Databricks EDA acceptance submission
+Inputs: training.to6_challenge3_inputs.returns_initial and training.to6_challenge3_inputs.returns_corrected. Supplied traceability: training.to6_challenge3_inputs.source_lineage, read into outputs/lineage.json; source descriptions retained in outputs/source-metadata.json. One row is one return, not one taxpayer.
+
+Initial full batch: 13 rows, year counts [{'tax_year': 2022, 'count': 5}, {'tax_year': 2023, 'count': 4}, {'tax_year': 2024, 'count': 4}]. Duplicate IDs [{'return_id': 'R01', 'count': 2}] and missing counts {'return_id': 0, 'tax_year': 0, 'income': 1, 'deduction': 0} require rejecting the initial batch. Zero-income records [{'return_id': 'R03', 'tax_year': 2022}, {'return_id': 'R09', 'tax_year': 2024}] are valid, not missing; preserve them with a null ratio. Replacement full batch has 12 rows, [] duplicate groups and missing counts {'return_id': 0, 'tax_year': 0, 'income': 0, 'deduction': 0}; apply the identical gate before writing. Its observed year counts [{'tax_year': 2022, 'count': 4}, {'tax_year': 2023, 'count': 4}, {'tax_year': 2024, 'count': 4}] determine the 2022/2023/2024 split coverage.
+
+Initial rejection evidence is outputs/rejected.json, preserving the affected rows and reasons. No initial batch write occurs. The replacement passes the same required-value, unique-ID and nonnegative checks. Valid zeros are retained.
+
+Output tables: training.to6_native_eda_20261119.features, training.to6_native_eda_20261119.train, training.to6_native_eda_20261119.validation, training.to6_native_eda_20261119.test. Ratio = deduction/income, null for zero income. Outputs contain only return_id, tax_year and deduction_to_income; no taxpayer identifiers or raw amounts. The readback verifies a separately calculated nonzero ratio and zero-income IDs.
+
+Two successful complete pipeline passes within this native job: 2026-11-19T07:18:39.975014+00:00 and 2026-11-19T07:19:05.700340+00:00. Full saved IDs and values are retained in outputs/run-1.json and outputs/run-2.json and compared for equality. The union of year tables must exactly equal the feature table; overwrite prevents appended duplicates. The job URL and ID are recorded by the submission transport in outputs/native-run.json.
+
+This is an operator acceptance artifact, not a learner session or student-permission test. It does not establish Ownership or Trait. No model training or chart is required or claimed.

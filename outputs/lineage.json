@@ -1,0 +1,12 @@
+[
+  {
+    "delivered_table": "training.to6_challenge3_inputs.returns_initial",
+    "relationship": "Synthetic initial delivery transformation; validation required",
+    "upstream_table": "training.to6_challenge3_inputs.parsed_source"
+  },
+  {
+    "delivered_table": "training.to6_challenge3_inputs.returns_corrected",
+    "relationship": "Synthetic corrected delivery; same validation rules",
+    "upstream_table": "training.to6_challenge3_inputs.parsed_source"
+  }
+]

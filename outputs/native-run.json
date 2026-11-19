@@ -1,0 +1,11 @@
+{
+  "run_id": 1124174321266319,
+  "run_url": "https://dbc-48a16403-f66f.cloud.databricks.com/?o=7474648218609329#job/776128566739800/run/1124174321266319",
+  "workspace_path": "/Shared/to6_native_eda_20261119/notebook",
+  "state": {
+    "life_cycle_state": "TERMINATED",
+    "result_state": "SUCCESS",
+    "state_message": "",
+    "user_cancelled_or_timedout": false
+  }
+}

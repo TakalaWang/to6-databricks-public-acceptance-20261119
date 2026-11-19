@@ -1,0 +1,75 @@
+{
+  "corrected": {
+    "duplicates": [],
+    "missing": {
+      "deduction": 0,
+      "income": 0,
+      "return_id": 0,
+      "tax_year": 0
+    },
+    "row_count": 12,
+    "years": [
+      {
+        "count": 4,
+        "tax_year": 2022
+      },
+      {
+        "count": 4,
+        "tax_year": 2023
+      },
+      {
+        "count": 4,
+        "tax_year": 2024
+      }
+    ],
+    "zero_income": [
+      {
+        "return_id": "R03",
+        "tax_year": 2022
+      },
+      {
+        "return_id": "R09",
+        "tax_year": 2024
+      }
+    ]
+  },
+  "initial": {
+    "duplicates": [
+      {
+        "count": 2,
+        "return_id": "R01"
+      }
+    ],
+    "missing": {
+      "deduction": 0,
+      "income": 1,
+      "return_id": 0,
+      "tax_year": 0
+    },
+    "row_count": 13,
+    "years": [
+      {
+        "count": 5,
+        "tax_year": 2022
+      },
+      {
+        "count": 4,
+        "tax_year": 2023
+      },
+      {
+        "count": 4,
+        "tax_year": 2024
+      }
+    ],
+    "zero_income": [
+      {
+        "return_id": "R03",
+        "tax_year": 2022
+      },
+      {
+        "return_id": "R09",
+        "tax_year": 2024
+      }
+    ]
+  }
+}

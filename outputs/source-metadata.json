@@ -1,0 +1,286 @@
+{
+  "returns_corrected": [
+    {
+      "col_name": "return_id",
+      "comment": null,
+      "data_type": "string"
+    },
+    {
+      "col_name": "taxpayer_id",
+      "comment": null,
+      "data_type": "string"
+    },
+    {
+      "col_name": "tax_year",
+      "comment": null,
+      "data_type": "int"
+    },
+    {
+      "col_name": "income",
+      "comment": null,
+      "data_type": "int"
+    },
+    {
+      "col_name": "deduction",
+      "comment": null,
+      "data_type": "int"
+    },
+    {
+      "col_name": "# Clustering Information",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "# col_name",
+      "comment": "comment",
+      "data_type": "data_type"
+    },
+    {
+      "col_name": "",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "# Delta Statistics Columns",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "Column Names",
+      "comment": "",
+      "data_type": "tax_year, deduction, return_id, income, taxpayer_id"
+    },
+    {
+      "col_name": "Column Selection Method",
+      "comment": "",
+      "data_type": "first-32"
+    },
+    {
+      "col_name": "",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "# Detailed Table Information",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "Catalog",
+      "comment": "",
+      "data_type": "training"
+    },
+    {
+      "col_name": "Database",
+      "comment": "",
+      "data_type": "to6_challenge3_inputs"
+    },
+    {
+      "col_name": "Table",
+      "comment": "",
+      "data_type": "returns_corrected"
+    },
+    {
+      "col_name": "Created Time",
+      "comment": "",
+      "data_type": "Sun Nov 15 18:45:55 UTC 2026"
+    },
+    {
+      "col_name": "Last Access",
+      "comment": "",
+      "data_type": "UNKNOWN"
+    },
+    {
+      "col_name": "Created By",
+      "comment": "",
+      "data_type": "Spark "
+    },
+    {
+      "col_name": "Statistics",
+      "comment": "",
+      "data_type": "1967 bytes, 12 rows"
+    },
+    {
+      "col_name": "Type",
+      "comment": "",
+      "data_type": "MANAGED"
+    },
+    {
+      "col_name": "Comment",
+      "comment": "",
+      "data_type": "Corrected synthetic delivery from parsed_source; one row per return. Validate required values and return_id uniqueness."
+    },
+    {
+      "col_name": "Location",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "Provider",
+      "comment": "",
+      "data_type": "delta"
+    },
+    {
+      "col_name": "Owner",
+      "comment": "",
+      "data_type": "takala.wang@gitroll.io"
+    },
+    {
+      "col_name": "Is_managed_location",
+      "comment": "",
+      "data_type": "true"
+    },
+    {
+      "col_name": "Predictive Optimization",
+      "comment": "",
+      "data_type": "ENABLE (inherited from METASTORE metastore_aws_us_west_2)"
+    },
+    {
+      "col_name": "Table Properties",
+      "comment": "",
+      "data_type": "[clusterByAuto=true,clusteringColumns=[],delta.checkpoint.writeStatsAsJson=false,delta.checkpoint.writeStatsAsStruct=true,delta.checkpointPolicy=v2,delta.enableDeletionVectors=true,delta.enableInCommitTimestamps=true,delta.enableRowTracking=true,delta.feature.appendOnly=supported,delta.feature.catalogManaged=supported,delta.feature.clustering=supported,delta.feature.deletionVectors=supported,delta.feature.domainMetadata=supported,delta.feature.inCommitTimestamp=supported,delta.feature.invariants=supported,delta.feature.rowTracking=supported,delta.feature.v2Checkpoint=supported,delta.feature.vacuumProtocolCheck=supported,delta.minReaderVersion=3,delta.minWriterVersion=7,delta.parquet.compression.codec=zstd,delta.parquet.format.version=2.12.0,delta.parquet.format.version.afe.internal=2.12.0,delta.rowTracking.materializedRowCommitVersionColumnName=_row-commit-version-col-5056b4c8-e0f7-4544-a416-dfd656dd98fe,delta.rowTracking.materializedRowIdColumnName=_row-id-col-0c706bd6-f42a-4c5d-9df8-1531e0a980f0,io.unitycatalog.tableId=e1a1714a-e5cc-44f1-b028-d3002ce6c6e8]"
+    }
+  ],
+  "returns_initial": [
+    {
+      "col_name": "return_id",
+      "comment": null,
+      "data_type": "string"
+    },
+    {
+      "col_name": "taxpayer_id",
+      "comment": null,
+      "data_type": "string"
+    },
+    {
+      "col_name": "tax_year",
+      "comment": null,
+      "data_type": "int"
+    },
+    {
+      "col_name": "income",
+      "comment": null,
+      "data_type": "int"
+    },
+    {
+      "col_name": "deduction",
+      "comment": null,
+      "data_type": "int"
+    },
+    {
+      "col_name": "# Clustering Information",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "# col_name",
+      "comment": "comment",
+      "data_type": "data_type"
+    },
+    {
+      "col_name": "",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "# Delta Statistics Columns",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "Column Names",
+      "comment": "",
+      "data_type": "tax_year, deduction, return_id, income, taxpayer_id"
+    },
+    {
+      "col_name": "Column Selection Method",
+      "comment": "",
+      "data_type": "first-32"
+    },
+    {
+      "col_name": "",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "# Detailed Table Information",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "Catalog",
+      "comment": "",
+      "data_type": "training"
+    },
+    {
+      "col_name": "Database",
+      "comment": "",
+      "data_type": "to6_challenge3_inputs"
+    },
+    {
+      "col_name": "Table",
+      "comment": "",
+      "data_type": "returns_initial"
+    },
+    {
+      "col_name": "Created Time",
+      "comment": "",
+      "data_type": "Sun Nov 15 18:45:50 UTC 2026"
+    },
+    {
+      "col_name": "Last Access",
+      "comment": "",
+      "data_type": "UNKNOWN"
+    },
+    {
+      "col_name": "Created By",
+      "comment": "",
+      "data_type": "Spark "
+    },
+    {
+      "col_name": "Statistics",
+      "comment": "",
+      "data_type": "3745 bytes, 13 rows"
+    },
+    {
+      "col_name": "Type",
+      "comment": "",
+      "data_type": "MANAGED"
+    },
+    {
+      "col_name": "Comment",
+      "comment": "",
+      "data_type": "Initial synthetic delivery from parsed_source; known delivery defects. Validate before feature output."
+    },
+    {
+      "col_name": "Location",
+      "comment": "",
+      "data_type": ""
+    },
+    {
+      "col_name": "Provider",
+      "comment": "",
+      "data_type": "delta"
+    },
+    {
+      "col_name": "Owner",
+      "comment": "",
+      "data_type": "takala.wang@gitroll.io"
+    },
+    {
+      "col_name": "Is_managed_location",
+      "comment": "",
+      "data_type": "true"
+    },
+    {
+      "col_name": "Predictive Optimization",
+      "comment": "",
+      "data_type": "ENABLE (inherited from METASTORE metastore_aws_us_west_2)"
+    },
+    {
+      "col_name": "Table Properties",
+      "comment": "",
+      "data_type": "[clusterByAuto=true,clusteringColumns=[],delta.checkpoint.writeStatsAsJson=false,delta.checkpoint.writeStatsAsStruct=true,delta.checkpointPolicy=v2,delta.enableDeletionVectors=true,delta.enableInCommitTimestamps=true,delta.enableRowTracking=true,delta.feature.appendOnly=supported,delta.feature.catalogManaged=supported,delta.feature.clustering=supported,delta.feature.deletionVectors=supported,delta.feature.domainMetadata=supported,delta.feature.inCommitTimestamp=supported,delta.feature.invariants=supported,delta.feature.rowTracking=supported,delta.feature.v2Checkpoint=supported,delta.feature.vacuumProtocolCheck=supported,delta.minReaderVersion=3,delta.minWriterVersion=7,delta.parquet.compression.codec=zstd,delta.parquet.format.version=2.12.0,delta.parquet.format.version.afe.internal=2.12.0,delta.rowTracking.materializedRowCommitVersionColumnName=_row-commit-version-col-a9b30305-358e-4d81-a605-690b209fa4a1,delta.rowTracking.materializedRowIdColumnName=_row-id-col-0654cb40-3317-4d71-8072-c7ff2a775e7b,io.unitycatalog.tableId=3b4c229a-64a4-406e-b20e-cd9489370b31]"
+    }
+  ]
+}
